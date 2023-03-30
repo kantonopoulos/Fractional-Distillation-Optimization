@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[8]:
-
-
 # Import Packages and Libraries
 import numpy as np
 import math
@@ -241,10 +235,3 @@ while (xfm<=0.2):  # range of xfm values
 df_c = df_c.dropna()
 df_c.to_excel('distcol.xlsx', index=False)
 print("Distillation Column Converged Normally --> all data in distcol.xlsx file")
-
-
-# In[ ]:
-
-
-
-
