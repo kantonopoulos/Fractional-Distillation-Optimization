@@ -3,9 +3,9 @@ import numpy as np
 import math
 import pandas as pd
 
+# Define the LewisFun function for tray calculations
 def LewisFun(F, D, r, xf, xd, xb, xq, Tbe, Tbw, Fm, Dm, Bm, Tbmixf):  
-    
-    # Parameters
+    # Parameters (constants)
     Tray_eff = 0.7  # efficiency of trays
     TS = 0.6  # distance between trays [m]
     rhoe = 789  # ethanol density [kg/m3]
@@ -28,7 +28,7 @@ def LewisFun(F, D, r, xf, xd, xb, xq, Tbe, Tbw, Fm, Dm, Bm, Tbmixf):
     x = np.array([])  # 1D array for the liquid ethanol molar fraction
     y = np.array([])  # 1D array for the vapor ethanol molar fraction
 
-    # Rectifying section
+    # Rectifying section calculations
     n = 0  # indexing
     y = np.append(y, xd)  # initial condition
     Tbmix = xd*Tbe + (1-xd)*Tbw  # boiling point of distillate [oC]
@@ -97,10 +97,9 @@ def LewisFun(F, D, r, xf, xd, xb, xq, Tbe, Tbw, Fm, Dm, Bm, Tbmixf):
    
     return s, N_real, Nr_real, Ns_real, Fp, Dc, Hc, Tbmixd, Tbmixb, Qc, Qr, ms, mw, CBMC, CBMT, UCS, UCW, CEB, TC
 
-
+# Define the ColumnDesignFun function for column design calculations
 def ColumnDesignFun(Dme, xfm, xdm, xbm):
-    
-    # Parameters
+    # Parameters (constants)
     q = 1  # parameter equals 1 if feed is saturated liquid
     MWe = 18.015  # molecular mass of ethanol [kg/kmol]
     MWw = 46.07  # molecular mass of water [kg/kmol]
