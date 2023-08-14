@@ -9,6 +9,7 @@
 
 ## Overview
 The Fractional Distillation Optimization is a powerful in-house algorithm designed to determine the optimal design characteristics of a fractional distillation column. The algorithm focuses on refining key parameters such as reflux ratio, number of trays, feed location, and more. This code has been developed using the Lewis-Matheson method, material and energy balances, and vapor-liquid equilibrium (VLE) data. It has been specifically tailored for fractional distillation scenarios, with a primary application in the separation of an ethanol-water mixture.
+* Assael, Maggiliotou, Physical Processes: A Calculation Introduction, Aristotle University of Thessaloniki, 2009, pp. 144-161.
 
 ## Features
 * **Optimization of Design Parameters**: The algorithm optimizes essential design parameters of a distillation column, including the reflux ratio, number of trays, and feed location. This enables the creation of an efficient column that meets specific separation requirements.
