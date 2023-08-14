@@ -1,10 +1,11 @@
 # Fractional Distillation Optimization
 ***
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [What can I do with the Rheological Analysis Toolbox?](#what-can-i-do-with-the-rheological-analysis-toolbox?)
-3. [License](#license)
-4. [Installation](#installation)
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Contribution](#contribution)
+4. [How to use](#how-to-use)
+5. [Important Notes](#important-notes)
 
 ## Overview
 The Fractional Distillation Optimization is a powerful in-house algorithm designed to determine the optimal design characteristics of a fractional distillation column. The algorithm focuses on refining key parameters such as reflux ratio, number of trays, feed location, and more. This code has been developed using the Lewis-Matheson method, material and energy balances, and vapor-liquid equilibrium (VLE) data. It has been specifically tailored for fractional distillation scenarios, with a primary application in the separation of an ethanol-water mixture.
